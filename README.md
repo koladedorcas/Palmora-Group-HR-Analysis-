@@ -104,14 +104,33 @@ A second dataset was used for mapping bonus percentage by rating.
 
 ## Dashboard Preview
 ![Palmoria group Dashboard](https://github.com/user-attachments/assets/a3ffd330-347a-4f96-8b02-6148b1ae5135)
------
-## Key Insights
 
-- Over 58% of employees earn **below** the $90,000 compliance threshold.
--  Women have **lower average salaries** than men across all regions.
-- Abuja has the **highest total compensation** after bonus allocations.
-- Gender distribution is nearly balanced overall, but department-level bias exists.
-- Male employees received **all the “Very Good” ratings**.
+-----
+
+## Key Insights
+### Palmoria Group: Gender and HR Data Analysis
+In this project, I analyzed HR data from Palmoria Group to uncover gender-related insights and assess salary compliance across three regions in Nigeria.
+
+- Total employees: 972
+
+- Minimum wage compliance: ✅ 303 employees meet the $90,000 threshold
+
+- Gender split: 49% Male, 46.5% Female, 4.4% Undisclosed
+
+- Top-paying departments: Accounting (Female), Engineering (Male)
+
+- Kaduna leads in female representation; Lagos is male-dominant
+
+- Most ratings fall under “Good” and “Average”, with females excelling in “Very Good” ratings
+
+## Lessons Learned:
+- Effective use of Power Query for data cleaning and merging bonus rules
+
+- Built interactive dashboards with slicers for flexible exploration
+
+- Used Cards, pie charts, and bar visuals to communicate findings clearly
+
+This project showcases my ability to translate HR data into actionable insights for decision-makers.
 
 ---
 
