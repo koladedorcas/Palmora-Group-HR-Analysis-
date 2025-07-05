@@ -35,7 +35,7 @@ Palmora Group has been under scrutiny for potential gender inequality and a visi
 
 ---
 
-## 📂 Dataset Description
+## Dataset Description
 
 | Column         | Description                                  |
 |----------------|----------------------------------------------|
