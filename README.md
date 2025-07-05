@@ -11,15 +11,14 @@ To help Palmora address gender inequality concerns, pay gap issues, and minimum 
 
 - [Project Overview](#-project-overview)
 - [Dataset Description](#-dataset-description)
-- [Key Questions Answered](#-key-questions-answered)
 - [Tools Used](#-tools-used)
 - [Data Cleaning & Preparation](#-data-cleaning--preparation)
 - [Power BI Report Features](#-power-bi-report-features)
-- [Key Insights](#-key-insights)
-- [Bonus Calculation Logic](#-bonus-calculation-logic)
+- [Key Questions Answered and their visualization](#-key-questions-answered-and-their-visualization)
 - [Dashboard Preview](#-dashboard-preview)
+- [Key Insights](#-key-insights)
 - [What I Learned](#-what-i-learned)
-- [How to View or Use the File](#-how-to-view-or-use-the-file)
+  
 
 ---
 
@@ -50,18 +49,6 @@ A second dataset was used for mapping bonus percentage by rating.
 
 ---
 
-## Key Questions Answered
-
-1. What is the gender distribution across regions and departments?
-2. How are ratings distributed by gender?
-3. Is there a gender-based salary gap across the organization?
-4. Does Palmora comply with the new $90,000 minimum salary regulation?
-5. What is the distribution of employees across salary bands?
-6. How much bonus should each employee receive based on rating?
-7. What is the total compensation (salary + bonus) per region?
-
----
-
 ## Tools Used
 
 - [Power BI Desktop](https://powerbi.microsoft.com)
@@ -79,6 +66,9 @@ A second dataset was used for mapping bonus percentage by rating.
 - Ensured correct data types (text, numeric)  
 - Created new columns for Salary Band, Bonus Amount, and Total Compensation  
 
+![Cleaned Palmoria employee dataset](https://github.com/user-attachments/assets/2a1e5e36-547e-464f-9a6b-1fd4466581aa)
+---
+![Cleaned palmoria bonus rule dataset](https://github.com/user-attachments/assets/72ae5bec-9cab-498a-9bd3-453f7bfa4c78)
 ---
 
 ## Power BI Report Features
@@ -87,12 +77,34 @@ A second dataset was used for mapping bonus percentage by rating.
 - **Clustered Bars**: Gender by Region & Department
 - **Stacked Columns**: Rating distribution by gender
 - **Matrix/Table**: Avg salary by Gender, Region, and Department
-- **Bar Charts**: Salary Band groupings, Bonus Allocation
-- **KPI Cards**: Total Employees, Minimum Wage Compliance Count
+- **Bar Charts**: Salary Band groupings, location and gender
+- **KPI Cards**: Total Employees, % gender count
 - **Slicers**: Gender | Region | Department | Rating
 
 ---
 
+## Key Questions Answered and their visualization
+
+1. What is the gender distribution across regions and departments?
+![Palmoria 1](https://github.com/user-attachments/assets/c3bebe09-0327-488e-b3c2-696cb9e1aec1)
+---
+2. How are ratings distributed by gender?
+![Palmoria 2](https://github.com/user-attachments/assets/b3ffc919-0f37-4f16-b89b-9ee7ba6b8562)
+---
+3. Is there a gender-based salary gap across the organization?
+![Palmoria 3](https://github.com/user-attachments/assets/71d2ae40-b6b0-41bd-8cfc-61ea42aac6aa)
+---
+4. Does Palmora comply with the new $90,000 minimum salary regulation?
+![Palmoria 4](https://github.com/user-attachments/assets/e97f3352-63a5-46d7-94a8-e5e6ee6eba9e)
+
+---
+5. What is the distribution of employees across salary bands?
+![Palmoria 4](https://github.com/user-attachments/assets/e97f3352-63a5-46d7-94a8-e5e6ee6eba9e)
+---
+
+## Dashboard Preview
+![Palmoria group Dashboard](https://github.com/user-attachments/assets/a3ffd330-347a-4f96-8b02-6148b1ae5135)
+-----
 ## Key Insights
 
 - Over 58% of employees earn **below** the $90,000 compliance threshold.
@@ -103,17 +115,8 @@ A second dataset was used for mapping bonus percentage by rating.
 
 ---
 
-## Bonus Calculation Logic
 
-| Rating       | Bonus % |
-|--------------|---------|
-| Very Good    | 20%     |
-| Good         | 10%     |
-| Average      | 5%      |
-| Poor         | 0%      |
-| Not Rated    | 0%      |
 
-## DAX Calculations
-```DAX
-Bonus Amount = Salary * LOOKUPVALUE('BonusRules'[Bonus %], 'BonusRules'[Rating], Rating)
-Total Compensation = Salary + Bonus Amount
+
+
+
